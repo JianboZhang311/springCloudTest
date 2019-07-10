@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: spring-cloud-eureka2
+server:
+  port: 10002
+
+
+eureka:
+  client:
+    # \u662F\u5426\u4ECE\u5176\u4ED6\u7684\u670D\u52A1\u4E2D\u5FC3\u540C\u6B65\u670D\u52A1\u5217\u8868
+    fetchRegistry: false
+    # \u662F\u5426\u628A\u81EA\u5DF1\u4F5C\u4E3A\u670D\u52A1\u6CE8\u518C\u5230\u5176\u4ED6\u670D\u52A1\u6CE8\u518C\u4E2D\u5FC3
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:${server.port}/eureka/

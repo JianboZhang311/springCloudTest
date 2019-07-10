@@ -1,0 +1,12 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10002/eureka/
+server:
+  port: 8763
+
+
+spring:
+  application:
+    name: service-member
+
